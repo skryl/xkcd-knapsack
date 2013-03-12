@@ -39,4 +39,8 @@ function newMenu(content) {
   $('#working').hide()
 }
 
-newMenu();
+
+$(document).ready(function () {
+  newMenu();
+  $('#basic-modal-content').modal();
+});
