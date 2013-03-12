@@ -2,8 +2,8 @@
 
 You can read more about it [here](http://xkcd.com/287/),
 [here](http://en.wikipedia.org/wiki/Knapsack_problem) and
-[here](http://en.wikipedia.org/wiki/Subset_sum_problem). There is also a demo
-available [here](http://xkcd278.herokuapp.com).
+[here](http://en.wikipedia.org/wiki/Subset_sum_problem). There is also a running
+demo available [here](http://xkcd287.herokuapp.com).
 
 
 ## How it Works
