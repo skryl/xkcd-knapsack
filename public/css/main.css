@@ -1,3 +1,6 @@
+h3 {
+  font-size: 36px;
+}
 circle {
   stroke-width: 0px;
   pointer-events: all;
@@ -30,6 +33,16 @@ circle.root{
 
 circle.root:hover {
   stroke-width: 0;
+}
+
+#header img {
+  position: relative;
+  margin-right: 10px;
+  float: left;
+  border: none;
+  height: 40px;
+  width: 40px;
+  opacity: 0.8;
 }
 
 #graphic {
