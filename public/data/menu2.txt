@@ -1,0 +1,30 @@
+$100.05
+cookie,$1.82
+crouton,$1.16
+soda ,$5.18
+buttered popcorn,$6.90
+masala dosa,$6.67
+potato chips,$7.31
+seafood paella,$9.09
+som tam,$9.22
+chicken rice,$10.71
+butterbrod,$11.80
+tortilla ,$12.42
+totopo,$16.57
+fried bake,$17.58
+brittle,$23.99
+bubblegum,$24.44
+candy cane,$25.34
+chewing gum,$26.79
+fudge,$26.15
+gummi candy,$27.82
+marzipan,$28.08
+nougat,$29.54
+toffee,$33.89
+turkish delight,$42.37
+rock candy,$43.41
+jelly bean,$45.24
+animal cracker,$46.97
+chips ahoy,$46.66
+chips deluxe,$47.42
+lemonade,$51.53

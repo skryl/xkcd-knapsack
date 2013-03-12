@@ -1,0 +1,10 @@
+$10.00
+carrots,$1
+fries,$2
+fruit,$3
+sandwitch,$4
+juice,$5
+steak,$6
+chicken,$7
+coffee,$8
+ice cream,$9

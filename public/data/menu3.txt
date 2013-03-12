@@ -1,0 +1,101 @@
+$2000
+cookie,$1.82
+crouton,$1.16
+soda ,$5.18
+buttered popcorn,$6.90
+masala dosa,$6.67
+potato chips,$7.31
+seafood paella,$9.09
+som tam,$9.22
+chicken rice,$10.71
+butterbrod,$11.80
+tortilla ,$12.42
+totopo,$16.57
+fried bake,$17.58
+brittle,$23.99
+bubblegum,$24.44
+candy cane,$25.34
+chewing gum,$26.79
+fudge,$26.15
+gummi candy,$27.82
+marzipan,$28.08
+nougat,$29.54
+toffee,$33.89
+turkish delight,$42.37
+rock candy,$43.41
+jelly bean,$45.24
+animal cracker,$46.97
+chips ahoy,$46.66
+chips deluxe,$47.42
+lemonade,$51.53
+gatorade,$52.20
+sprite,$52.70
+macaroni,$53.12
+phone,$54.44
+spoon,$54.39
+grapes,$59.68
+fork,$59.00
+phone,$61.47
+headphone,$61.98
+speaker,$61.74
+amp,$61.48
+wire,$62.92
+frame,$63.67
+window,$64.10
+door,$67.93
+floor,$69.31
+wall,$69.86
+ceiling,$71.54
+tile,$74.74
+mirror,$74.18
+closet,$75.36
+shoes,$76.63
+jacket,$76.50
+heels,$79.62
+sneakers,$80.58
+oven,$84.05
+mit,$85.94
+gloves,$85.72
+scarf,$88.51
+monitor,$92.97
+tv,$92.50
+vase,$97.88
+piano,$97.64
+flowers,$100.44
+clock,$100.87
+computer,$100.53
+statue,$102.38
+coral,$107.07
+book,$119.46
+grass,$125.54
+juice,$150.09
+chair,$3.31
+sub,$4.84
+cable,$4.23
+rope,$6.05
+scissors,$6.74
+balloon,$9.47
+cash,$12.48
+cab,$14.44
+light,$15.40
+shine,$15.60
+led,$16.79
+screw,$16.86
+driver,$17.02
+truck,$20.09
+bag,$21.62
+sack,$21.89
+potatoes,$23.55
+cabbage,$23.21
+lean,$24.89
+mean,$25.67
+machine,$26.63
+green,$27.02
+yellow,$27.84
+red,$27.63
+black,$30.71
+blue,$31.24
+white,$31.91
+light,$32.61
+oh,$42.13
+god,$52.19
