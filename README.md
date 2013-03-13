@@ -10,31 +10,33 @@ demo available [here](http://xkcd287.herokuapp.com).
 
 To use the knapsack solver, simply drag a well formatted menu file into the
 plate area. Your menu file should look like the example below. Notice that the
-goal amount for the solver is on the first line. The parser isn't very smart so
-all formatting is required.
+goal amount for the solver is on the first line. The parser will ignore badly
+formatted lines.
 
 ```
-$15.05
-mixed fruit,$2.15
-french fries,$2.75
-side salad,$3.35
-hot wings,$3.55
-mozzarella sticks,$4.20
-sampler plate,$5.80
-barbecue,$6.55
+15.05
+mixed fruit, 2.15
+french fries, 2.75
+side salad, 3.35
+hot wings, 3.55
+mozzarella sticks, 4.20
+sampler plate, 5.80
+barbecue, 6.55
 ```
 
 Large menus (> 50 items) may take a while to solve. If the number of
-combinations is too large to display using visualization then the page will
-simply tell you the number of solutions it found.
+combinations is too large to be displayed then only the number of solutions will
+be shown.
+
+Clicking on any platter combination will zoom to show the contents.
 
 
 ## The Algorithm
 
 I used an approach similar to the Polynomial Time Approximation algorithm
-below. In essence it builds a power set of the given set of numbers while
+below. In essence it builds a power set of the set of the price list while
 simultanesouly trimming all elements that are larger than the goal sum or are
-close in magnitude to one another.
+equal in magnitude.
 
 ```
 initialize a list S to contain one element 0.

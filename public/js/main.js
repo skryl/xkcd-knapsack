@@ -3,7 +3,7 @@
  *
  */
 
-var simpleMenu = "$10.00\ncarrots,$1\nfries,$2\nfruit,$3\nsandwitch,$4\njuice,$5\nsteak,$6\nchicken,$7\ncoffee,$8\nice cream,$9\n" 
+var simpleMenu = "10\ncarrots,1\nfries,2\nfruit,3\nsandwitch,4\njuice,5\nchips,6\nchicken,7\nwine,8\nfish,9\nsteak,10" 
 
 function updateMenu(menu) {
   $('#menuitems li').remove();
@@ -17,7 +17,7 @@ function updateMenu(menu) {
 function updateInfo(info) {
   $('#info p').text(info.count + ' Combinations');
   $('#info h2').text('$' + (info.price/100).toFixed(2));
-  updateMenu(info.menu);
+  updateMenu(info.items);
 }
 
 function failImage() {
@@ -25,8 +25,12 @@ function failImage() {
 }
 
 function showSolution(info) {
+  var formatter = function (d) {
+    return { children: d.map(function (c) { return { children: c.map(function (n) { return {name: n.name, price: n.price}; }) }; }) };
+  };
+
   updateInfo(info);
-  circlePack(info.solution);
+  circlePack(formatter(info.solution));
 }
 
 function noSolution(info) {
@@ -34,8 +38,14 @@ function noSolution(info) {
   failImage();
 }
 
+function badMenu(info) {
+  updateInfo({items:[], price: 0, count: 0});
+  alert('Cannot parse menu file.');
+  failImage();
+}
+
 function newMenu(content) {
-  menu(content || simpleMenu).solve({ max: 500, success: showSolution, fail: noSolution })
+  menu(content || simpleMenu).solve({ max: 500, success: showSolution, fail: noSolution, badParse: badMenu });
   $('#working').hide()
 }
 

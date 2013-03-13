@@ -21,8 +21,10 @@ function handleFileSelect(evt) {
   evt.stopPropagation();
   evt.preventDefault();
 
+  // FIXME: not the place for DOM updates
   cleanupOldPack();
-  $('#working').show()
+  $('#working').show();
+
   var files = evt.dataTransfer.files; // FileList object.
 
   // files is a FileList of File objects. List some properties.
