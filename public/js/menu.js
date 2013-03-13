@@ -2,13 +2,10 @@
 * Title:  XKCD Knapsack Problem
 * Author: Alex Skryl
 *
-* Description:
+* Description
 *
 * A solution for a special case of the Knapsack Problem called the Subset-Sum
-* Problem. The algorithm is able count the number of solutions in polynomial time
-* by constructing a partition tree of a number and traversing it to determine the
-* number of subsets for that node. Actually displaying the solution is more
-* memory and computationally intensive.
+* Problem. 
 *
 * Assumptions
 *
@@ -19,7 +16,7 @@
 * Testing for correctness was done against OEIS set A000009, a sequence 
 * representing the result of the number of partitions of n into distinct parts.
 *
-* References:
+* References
 *
 * JavaScript PowerSet Implementation:
 *   http://rosettacode.org/wiki/Power_set#JavaScript
