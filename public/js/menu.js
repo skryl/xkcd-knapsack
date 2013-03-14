@@ -170,7 +170,7 @@ var menu = function (content) {
     if (!partitions) return acc;
 
     var recur = function (partitions) {
-      var price, val, partition_set;
+      var price, cache_key, val, partition_set;
 
       var partitionFilter = function (a, sol) {
         var first = sol[0],
@@ -190,15 +190,17 @@ var menu = function (content) {
         };
 
         if (first.name === '__any__') {
-          price = first.price;
+          cache_key = [first.price,last.price].join(',');
 
-          // TODO: fix caching
-          // val = cache[price];
-          // if (!val) {
-            partition_set = partitionTree[price].reduce(priceFilter, []);
+          // Check the cache first so we don't have to reduce the same parts of
+          // the tree over and over.
+          //
+          val = cache[cache_key];
+          if (!val) {
+            partition_set = partitionTree[first.price].reduce(priceFilter, []);
             val = recur(partition_set);
-          //   cache[price] = val;
-          // }
+            cache[cache_key] = val;
+          }
 
           return concat(a, rModify(val, sol));
         } else {
