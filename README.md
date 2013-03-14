@@ -33,10 +33,10 @@ Clicking on any platter combination will zoom to show the contents.
 
 ## The Algorithm
 
-I used an approach similar to the Polynomial Time Approximation algorithm
-below. In essence it builds a power set of the set of the price list while
-simultanesouly trimming all elements that are larger than the goal sum or are
-equal in magnitude.
+I used an approach similar to the Polynomial Time Approximation algorithm below.
+In essence it builds a power set of the the price list while simultanesouly
+trimming all elements that are larger than the goal sum or are equal in
+magnitude to one another.
 
 ```
 initialize a list S to contain one element 0.
